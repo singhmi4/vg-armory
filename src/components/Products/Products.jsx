@@ -35,9 +35,8 @@ const Products = () => {
               <Link to={`/products/${product.slug}`}>
                 <Image fluid={product.image.fluid} alt={product.title}></Image>
               </Link>
-              <h6>
-                {product.title} <span>${product.price}</span>
-              </h6>
+              <h6>{product.title}</h6>
+              <p>${product.price}</p>
             </Col>
           )
         })}
