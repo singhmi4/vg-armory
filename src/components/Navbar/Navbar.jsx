@@ -7,10 +7,14 @@ const NavbarComp = () => {
   return (
     <Navbar className={styles.customNav}>
       <Navbar.Brand>
-        <Link to="/">Video Game Armory</Link>
+        <Link className={styles.text} to="/">
+          Video Game Armory
+        </Link>
       </Navbar.Brand>
       <Nav className="ml-auto">
-        <Link to="/products/">Products</Link>
+        <Link className={styles.text} to="/products/">
+          Products
+        </Link>
       </Nav>
     </Navbar>
   )

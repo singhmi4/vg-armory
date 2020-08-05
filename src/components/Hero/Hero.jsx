@@ -26,7 +26,7 @@ const Hero = () => {
         <p>It's too dangerous to go alone...</p>
         <p>
           <Link to="/products/">
-            <Button variant="primary">...Take This</Button>
+            <Button variant="warning">...Take This</Button>
           </Link>
         </p>
       </Container>
