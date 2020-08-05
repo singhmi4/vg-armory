@@ -11,5 +11,16 @@ module.exports = {
     description: `Find all the rare and even legendary items contained throughout the video gaming universe under one roof.`,
     author: `@singhmi4`,
   },
-  plugins: [],
+
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 }
