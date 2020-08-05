@@ -22,8 +22,8 @@ const Hero = () => {
       className={styles.backgroundImage}
     >
       <Container className={styles.container}>
-        <h1>Faux Videogame Armory Shop</h1>
-        <p>It's too dangerous to go alone...</p>
+        <h1 className={styles.title}> Faux Videogame Armory Shop</h1>
+        <p className={styles.subtext}>It's too dangerous to go alone...</p>
         <p>
           <Link to="/products/">
             <Button variant="warning">...Take This</Button>

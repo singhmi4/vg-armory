@@ -4,6 +4,21 @@
     padding: 25px 0;
 }
 
-.containerText>* {
-    margin: 25px 0;
+@media (max-width: 450px) {
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtext {
+        margin-top: 12rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .subtext {
+        margin-top: 12rem;
+    }
 }
