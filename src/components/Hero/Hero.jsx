@@ -21,7 +21,7 @@ const Hero = () => {
       fluid={data.indexedImage.childImageSharp.fluid}
       className={styles.backgroundImage}
     >
-      <Container className={styles.containerText}>
+      <Container className={styles.container}>
         <h1>Faux Videogame Armory Shop</h1>
         <p>It's too dangerous to go alone...</p>
         <p>
