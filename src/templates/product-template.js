@@ -23,13 +23,16 @@ const Product = ({
           </Col>
         </Row>
         <Row>
-          <Col md={8}>
+          <Col md={6}>
             <Image fixed={fixed} alt={title} />
           </Col>
-          <Col md={4}>
-            <p className="text-justified">{info}</p>
-            <h3>${price}</h3>
-            <Button variant="success">Add to Inventory</Button>
+          <Col md={6}>
+            <p className="text-justify">{info}</p>
+            <h3 className="text-center">${price}</h3>
+            <Row></Row>
+            <Col className="text-center">
+              <Button variant="success">Add to Inventory</Button>
+            </Col>
           </Col>
         </Row>
         <Row>

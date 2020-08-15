@@ -4,4 +4,10 @@
 
 .text {
     color: white;
+    transition: 0.25s;
+}
+
+.text:hover {
+    color: yellow;
+    text-decoration: none;
 }
