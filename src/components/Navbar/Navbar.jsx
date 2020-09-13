@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap"
 import styles from "./Navbar.module.css"
 
+
 const NavbarComp = () => {
+
   return (
     <Navbar className={styles.customNav}>
       <Navbar.Brand>
@@ -13,10 +15,14 @@ const NavbarComp = () => {
       </Navbar.Brand>
       <Nav className="ml-auto">
         <Link className={styles.text} to="/products/">
-          Products
+          Products 
+        </Link>
+        <Link className={styles.text} to="/products/">
+           | Cart <span>0</span>
         </Link>
       </Nav>
     </Navbar>
+
   )
 }
 

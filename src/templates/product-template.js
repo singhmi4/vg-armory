@@ -2,7 +2,10 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import { Container, Row, Col, Button } from "react-bootstrap"
+
 import Layout from "../components/Layout/Layout"
+import AddToCartBtn from "../components/Buttons/AddToCardBtn"
+
 
 const Product = ({
   data: {
@@ -13,7 +16,9 @@ const Product = ({
       info: { info },
     },
   },
-}) => {
+}, props) => {
+
+  console.log(props);
   return (
     <Layout>
       <Container>
@@ -31,7 +36,7 @@ const Product = ({
             <h3 className="text-center">${price}</h3>
             <Row></Row>
             <Col className="text-center">
-              <Button variant="success">Add to Inventory</Button>
+              <AddToCartBtn />
             </Col>
           </Col>
         </Row>
